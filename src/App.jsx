@@ -19,9 +19,9 @@ const PaymentTokenApp = () => {
   const [adminPassword, setAdminPassword] = useState('');
   const [showAdminPanel, setShowAdminPanel] = useState(false);
   const [tempUnitPrice, setTempUnitPrice] = useState(100);
-  const [googleScriptUrl, setGoogleScriptUrl] = useState(''); // Add your Google Apps Script URL here
+  const [googleScriptUrl, setGoogleScriptUrl] = useState('https://script.google.com/u/0/home/projects/1u1CDCxAKy-OGpk6QNl6qT0z4J2tYDAXb82v3zE8Gp69dmufXf2RiYpL5/edit'); // https://script.google.com/u/0/home/projects/1u1CDCxAKy-OGpk6QNl6qT0z4J2tYDAXb82v3zE8Gp69dmufXf2RiYpL5/edit
   const qrCodeImageUrl = 'https://raphashealth.com/FDB.jpeg';
-  const [googleScriptUrl, setGoogleScriptUrl] = useState('https://script.google.com/u/0/home/projects/1u1CDCxAKy-OGpk6QNl6qT0z4J2tYDAXb82v3zE8Gp69dmufXf2RiYpL5/edit');
+  const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const fileInputRef = useRef(null);
 
@@ -177,7 +177,7 @@ const PaymentTokenApp = () => {
   };
 
   const handleAdminLogin = () => {
-    if (adminPassword === 'admin123') { // Change this password
+    if (adminPassword === 'dbbr2025') { // Change this password
       setShowAdminPanel(true);
       setTempUnitPrice(unitPrice);
       setAdminPassword('');
